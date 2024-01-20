@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "pyqt5-designer-mini"
+name = "pyqt5_qt5_designer"
 dynamic = ["version"]
 description = ''
 readme = "README.md"
@@ -27,7 +27,7 @@ classifiers = [
 dependencies = ["pyqt5"
 ]
 [project.scripts]
-pyqt5-designer-mini = "pyqt5_qt5_designer.designer_runner:main_function"
+pyqt5_qt5_designer = "pyqt5_qt5_designer.designer_runner:main_function"
 
 [project.urls]
 Documentation = "https://github.com/selmen2004/pyqt5_qt5_designer#readme"
