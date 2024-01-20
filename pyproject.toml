@@ -30,9 +30,9 @@ dependencies = ["pyqt5"
 pyqt5-designer-mini = "pyqt5_qt5_designer.designer_runner:main_function"
 
 [project.urls]
-Documentation = "https://github.com/selmen2004/pyqt5-designer-mini#readme"
-Issues = "https://github.com/selmen2004/pyqt5-designer-mini/issues"
-Source = "https://github.com/selmen2004/pyqt5-designer-mini"
+Documentation = "https://github.com/selmen2004/pyqt5_qt5_designer#readme"
+Issues = "https://github.com/selmen2004/pyqt5_qt5_designer/issues"
+Source = "https://github.com/selmen2004/pyqt5_qt5_designer"
 
 [tool.hatch.version]
 path = "src/pyqt5_qt5_designer/__about__.py"
@@ -74,8 +74,8 @@ omit = [
 ]
 
 [tool.coverage.paths]
-pyqt5_qt5_designer = ["src/pyqt5_qt5_designer", "*/pyqt5-designer-mini/src/pyqt5_qt5_designer"]
-tests = ["tests", "*/pyqt5-designer-mini/tests"]
+pyqt5_qt5_designer = ["src/pyqt5_qt5_designer", "*src/pyqt5_qt5_designer"]
+tests = ["tests", "*/pyqt5_qt5_designer/tests"]
 
 [tool.coverage.report]
 exclude_lines = [
