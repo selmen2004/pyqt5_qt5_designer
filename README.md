@@ -1,4 +1,4 @@
-# pyqt5_designer_mini
+# PyQt5 designer minimalist package
 
 [![PyPI - Version](https://img.shields.io/pypi/v/pyqt5_qt5_designer.svg)](https://pypi.org/project/pyqt5_qt5_designer)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyqt5_qt5_designer.svg)](https://pypi.org/project/pyqt5_qt5_designer)
