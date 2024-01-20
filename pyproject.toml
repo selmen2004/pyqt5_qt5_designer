@@ -27,7 +27,7 @@ classifiers = [
 dependencies = ["pyqt5"
 ]
 [project.scripts]
-pyqt5-designer-mini = "pyqt5_designer_mini.designer_runner:main_function"
+pyqt5-designer-mini = "pyqt5_qt5_designer.designer_runner:main_function"
 
 [project.urls]
 Documentation = "https://github.com/selmen2004/pyqt5-designer-mini#readme"
@@ -35,7 +35,7 @@ Issues = "https://github.com/selmen2004/pyqt5-designer-mini/issues"
 Source = "https://github.com/selmen2004/pyqt5-designer-mini"
 
 [tool.hatch.version]
-path = "src/pyqt5_designer_mini/__about__.py"
+path = "src/pyqt5_qt5_designer/__about__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
@@ -63,18 +63,18 @@ dependencies = [
   
 ]
 [tool.hatch.envs.types.scripts]
-check = "mypy --install-types --non-interactive {args:src/pyqt5_designer_mini tests}"
+check = "mypy --install-types --non-interactive {args:src/pyqt5_qt5_designer tests}"
 
 [tool.coverage.run]
-source_pkgs = ["pyqt5_designer_mini", "tests"]
+source_pkgs = ["pyqt5_qt5_designer", "tests"]
 branch = true
 parallel = true
 omit = [
-  "src/pyqt5_designer_mini/__about__.py",
+  "src/pyqt5_qt5_designer/__about__.py",
 ]
 
 [tool.coverage.paths]
-pyqt5_designer_mini = ["src/pyqt5_designer_mini", "*/pyqt5-designer-mini/src/pyqt5_designer_mini"]
+pyqt5_qt5_designer = ["src/pyqt5_qt5_designer", "*/pyqt5-designer-mini/src/pyqt5_qt5_designer"]
 tests = ["tests", "*/pyqt5-designer-mini/tests"]
 
 [tool.coverage.report]
@@ -83,12 +83,14 @@ exclude_lines = [
   "if __name__ == .__main__.:",
   "if TYPE_CHECKING:",
 ]
-[tool.hatch.build.targets.sdist]
-include = ["bin/*"]
+
 [tool.hatch.build.targets.wheel]
-include = ["bin/*" ,
+include = [
           "src/*"
 ]
-packages = ["src/pyqt5_designer_mini"]
+packages = [
+  "src/pyqt5_qt5_designer",
+  "src/PyQt5"
+  ]
 #[tool.hatch.build.targets.wheel.sources]
 #"bin" = "../PyQt5/Qt5/bin"
