@@ -16,7 +16,9 @@
 ## Introduction 
 
 This package is designed for two reasons :
+
 1- Remove the necessity of installing the whole pyqt5_tools packages to be able to use designer , ignoring some problems in pip versioning (on windows)
+
 2- Providing a minimalist package to run Qt5 Designer( less than 1MB ) that relies on existing pyqt5 bin files 
 
 
