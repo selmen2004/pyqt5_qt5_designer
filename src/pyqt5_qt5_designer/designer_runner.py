@@ -8,7 +8,7 @@ def main_function():
 
     # Run designer executable with the provided arguments
     #print("Command:", [designer_location] + list(sys.argv))
-    subprocess.run([designer_location] + sys.argv[1])
+    subprocess.run([designer_location] + [sys.argv[1]])
 
 if __name__ == "__main__":
     
