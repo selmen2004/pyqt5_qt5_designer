@@ -27,7 +27,7 @@ classifiers = [
 dependencies = ["pyqt5"
 ]
 
-[project.scripts]
+[project.gui-scripts]
 pyqt5_qt5_designer = "pyqt5_qt5_designer.designer_runner:main_function"
 
 [project.urls]
