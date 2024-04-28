@@ -11,4 +11,4 @@ def main_function(*args):
 if __name__ == "__main__":
     import sys
     # Pass any command-line arguments to the main_function
-    main_function(*sys.argv[1:])
+    main_function(*sys.argv)
