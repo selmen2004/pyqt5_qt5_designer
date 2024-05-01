@@ -28,6 +28,15 @@ This package is designed for two reasons :
 pip install pyqt5_qt5_designer
 ```
 
+## Usage
+
+Just type into console :
+
+```console
+pyqt5_qt5_designer
+```
+and you will get Designer running
+
 ## License
 
 `pyqt5_qt5_designer` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
